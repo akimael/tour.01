@@ -1,0 +1,1139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #14213D;
+    color: #e1e4e9;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #14213D;
+    padding: 20px 40px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 20px;
+}
+
+/* Lista de links */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Links do menu */
+.navbar ul a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+    /* Linha invisível antes do hover */
+    border-bottom: 2px solid transparent;
+
+    /* Espaço entre o texto e a linha */
+    padding-bottom: 5px;
+
+    /* Animação */
+    transition: color 0.2s, border-color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.navbar ul a:hover {
+    color: #FCA311;
+    border-bottom-color: #FFFFFF;
+}
+
+
+/* Logo */
+.logo {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #FCA311;
+}
+
+/* Título principal */
+header h1 {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 45px 0;
+    margin-bottom: 0;
+}
+.hero {
+    min-height: 450px;
+    margin: 30px 40px;
+    padding: 50px;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 33, 61, 0.95),
+            rgba(20, 33, 61, 0.35)
+        ),
+        url("viajar.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* CONTEÚDO DO CARD */
+.hero-conteudo {
+    max-width: 600px;
+}
+
+/* FRASE PEQUENA */
+.hero-destaque {
+    color: #FCA311;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* TÍTULO PRINCIPAL */
+.hero h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+/* SUBTÍTULO */
+.hero h2 {
+    color: #FCA311;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+/* DESCRIÇÃO */
+.hero-descricao {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.botao-hero {
+    display: inline-block;
+    background-color: #FCA311;
+    color: #14213D;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* EFEITO DO BOTÃO */
+.botao-hero:hover {
+    background-color: #FFFFFF;
+    color: #14213D;
+    transform: translateY(-3px);
+}
+span {
+    color: #FCA311;
+}
+
+/* SEÇÃO DE PACOTES */
+.secao-pacotes {
+    padding: 40px;
+    text-align: center;
+}
+
+.secao-pacotes > h1 {
+    color: #14213D;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.introducao {
+    color: #fdfdfc;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+/* ORGANIZAÇÃO DOS CARDS */
+.container-pacotes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* CADA CARD */
+.card-pacote {
+    background-color: #0e0a47;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(20, 33, 61, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* FOTO */
+.card-pacote img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* CONTEÚDO */
+.conteudo-pacote {
+    padding: 22px;
+}
+
+.conteudo-pacote h2 {
+    color: #f4f4f5;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.conteudo-pacote p {
+    color: #f9fafc;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 75px;
+}
+
+/* BOTÃO */
+.botao-pacote {
+    display: inline-block;
+    background-color: #FCA311;
+    color: #14213D;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-pacote:hover {
+    background-color: #14213D;
+    color: #FFFFFF;
+}
+
+/* ANIMAÇÃO DO CARD */
+.card-pacote:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(20, 33, 61, 0.2);
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+    .container-pacotes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .container-pacotes {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-pacotes {
+        padding: 25px 15px;
+    }
+
+    .secao-pacotes > h1 {
+        font-size: 28px;
+    }
+}
+.destinos-destaque {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.destinos-destaque h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.destinos-destaque > p {
+    color: #e1e4e9;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+.pacote {
+    background-color: #14213D;
+    color: #e1e4e9;
+    text-align: center;
+    padding: 65px 25px 35px;
+    margin: 35px 40px;
+    border: 1px solid rgba(252, 163, 17, 0.35);
+    border-radius: 12px;
+}
+
+/* Pequeno destaque acima do título */
+.pacote-destaque {
+    display: inline-block;
+    color: #FCA311;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+/* Título principal */
+.pacote h2 {
+    color: #FFFFFF;
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+/* Subtítulo */
+.pacote h3 {
+    color: #FCA311;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+/* Descrição */
+.pacote p {
+    color: #e1e4e9;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 28px;
+}
+
+/* Botão para acessar o carrossel */
+.btn-pacotes {
+    display: inline-block;
+    padding: 13px 22px;
+    color: #14213D;
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-pacotes span {
+    margin-left: 8px;
+}
+
+/* Efeito do botão */
+.btn-pacotes:hover {
+    background-color: transparent;
+    color: #FCA311;
+}
+
+/* Linha final decorativa */
+.pacote-rodape {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(225, 228, 233, 0.25);
+    color: #aebbd0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.pacote-rodape span {
+    color: #FCA311;
+    margin: 0 8px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    .pacote {
+        margin: 25px 15px;
+        padding: 45px 18px 25px;
+    }
+
+    .pacote h2 {
+        font-size: 30px;
+    }
+
+    .pacote h3 {
+        font-size: 19px;
+    }
+
+    .pacote-rodape {
+        line-height: 2.5;
+    }
+}
+
+/* Introdução da página */
+.contato-intro {
+    text-align: center;
+    padding: 65px 25px 35px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.contato-destaque {
+    color: #FCA311;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contato-intro h2 {
+    color: #FFFFFF;
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.contato-intro p {
+    color: #e1e4e9;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Área principal */
+.contato-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 20px auto 70px;
+    padding: 0 25px;
+    align-items: start;
+}
+
+/* Informações de contato */
+.contato-info {
+    background-color: #1c2c4d;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid rgba(252, 163, 17, 0.25);
+}
+
+.contato-info h3,
+.contato-formulario h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.contato-info > p {
+    color: #e1e4e9;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contato-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    background-color: rgba(252, 163, 17, 0.12);
+    color: #FCA311;
+    border-radius: 8px;
+    font-size: 23px;
+}
+
+.contato-item h4 {
+    color: #FCA311;
+    margin: 0 0 7px;
+}
+
+.contato-item p {
+    color: #e1e4e9;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Formulário */
+.contato-formulario {
+    background-color: #182644;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid rgba(225, 228, 233, 0.15);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    color: #e1e4e9;
+    font-size: 14px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    background-color: #14213D;
+    color: #e1e4e9;
+    border: 1px solid #46536d;
+    border-radius: 5px;
+    font: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #9ca8bc;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #FCA311;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+/* Botão de envio */
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: #FCA311;
+    color: #14213D;
+    border: 1px solid #FCA311;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: transparent;
+    color: #FCA311;
+}
+
+/* Rodapé */
+.contato-footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(225, 228, 233, 0.2);
+    color: #e1e4e9;
+    font-size: 13px;
+}
+
+/* Responsividade */
+@media (max-width: 750px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+        padding: 0 18px;
+    }
+
+    .contato-intro h2 {
+        font-size: 29px;
+    }
+
+    .contato-info,
+    .contato-formulario {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contato-intro {
+        padding-top: 45px;
+    }
+}
+
+
+/* ========================================
+   PÁGINA DE VIAGENS
+======================================== */
+
+/* APRESENTAÇÃO */
+.viagens-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 60px auto 50px;
+    padding: 0 25px;
+}
+
+.viagens-destaque {
+    color: #FCA311;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.viagens-intro h1 {
+    color: #FFFFFF;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.viagens-intro p {
+    color: #e1e4e9;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* SEÇÃO DOS DESTINOS */
+.viagens-destinos {
+    margin: 0 40px 70px;
+}
+
+.viagens-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.viagens-titulo h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.viagens-titulo p {
+    color: #e1e4e9;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* GRADE DOS CARDS */
+.viagens-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* CARD DE DESTINO */
+.viagem-card {
+    background-color: #1c2d4d;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.viagem-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* IMAGEM */
+.viagem-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.viagem-card:hover img {
+    transform: scale(1.04);
+}
+
+/* CONTEÚDO */
+.viagem-conteudo {
+    padding: 25px;
+}
+
+.viagem-local {
+    color: #FCA311;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.viagem-conteudo h3 {
+    color: #FFFFFF;
+    font-size: 23px;
+    margin: 12px 0;
+}
+
+.viagem-conteudo p {
+    color: #e1e4e9;
+    font-size: 15px;
+    line-height: 1.7;
+    min-height: 100px;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO DOS CARDS */
+.viagem-botao {
+    display: inline-block;
+    color: #FCA311;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.viagem-botao:hover {
+    color: #FFFFFF;
+    border-bottom-color: #FCA311;
+}
+
+/* CHAMADA FINAL */
+.viagens-chamada {
+    text-align: center;
+    margin: 0 40px 70px;
+    padding: 55px 30px;
+    background-color: #1c2d4d;
+    border-radius: 20px;
+    border: 1px solid rgba(252, 163, 17, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.viagens-chamada span {
+    color: #FCA311;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.viagens-chamada h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 18px 0;
+}
+
+.viagens-chamada p {
+    color: #e1e4e9;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO PRINCIPAL */
+.viagens-cta {
+    display: inline-block;
+    background-color: #FCA311;
+    color: #14213D;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.viagens-cta:hover {
+    background-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+/* RODAPÉ */
+.contato-footer {
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e1e4e9;
+    font-size: 14px;
+}
+
+/* TABLETS */
+@media (max-width: 1000px) {
+    .viagens-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .viagens-intro h1 {
+        font-size: 36px;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 650px) {
+    header {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar ul a {
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .viagens-intro {
+        margin: 40px auto;
+    }
+
+    .viagens-intro h1 {
+        font-size: 30px;
+    }
+
+    .viagens-intro p {
+        font-size: 16px;
+    }
+
+    .viagens-destinos {
+        margin: 0 20px 50px;
+    }
+
+    .viagens-titulo h2 {
+        font-size: 27px;
+    }
+
+    .viagens-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .viagem-card img {
+        height: 220px;
+    }
+
+    .viagem-conteudo p {
+        min-height: 0;
+    }
+
+    .viagens-chamada {
+        margin: 0 20px 50px;
+        padding: 40px 20px;
+    }
+
+    .viagens-chamada h2 {
+        font-size: 25px;
+    }
+}
+
+/* Seção de Bate e Voltas */
+.secao-bate-voltas {
+    padding: 50px 5%;
+    background-color: #14213D;
+    color: #e1e4e9;
+    text-align: center;
+}
+
+.secao-bate-voltas h1 {
+    color: #FCA311;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.secao-bate-voltas .introducao {
+    color: #9ca8bc;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* Grade dos passeios */
+.container-bate-voltas {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Card individual */
+.card-bate-volta {
+    background-color: #1b2b4a;
+    border: 1px solid #46536d;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-bate-volta:hover {
+    transform: translateY(-5px);
+    border-color: #FCA311;
+}
+
+/* Imagens */
+.card-bate-volta img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Conteúdo do card */
+.conteudo-bate-volta {
+    padding: 20px;
+}
+
+.conteudo-bate-volta h2 {
+    color: #FCA311;
+    font-size: 20px;
+    margin: 0 0 12px;
+}
+
+.conteudo-bate-volta p {
+    color: #e1e4e9;
+    font-size: 13px;
+    line-height: 1.7;
+    min-height: 88px;
+    margin-bottom: 20px;
+}
+
+/* Botão de consulta */
+.botao-bate-volta {
+    display: block;
+    padding: 12px 10px;
+    background-color: #FCA311;
+    color: #14213D;
+    border: 1px solid #FCA311;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-bate-volta:hover {
+    background-color: transparent;
+    color: #FCA311;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1000px) {
+    .container-bate-voltas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .secao-bate-voltas {
+        padding: 35px 5%;
+    }
+
+    .secao-bate-voltas h1 {
+        font-size: 24px;
+    }
+
+    .container-bate-voltas {
+        grid-template-columns: 1fr;
+    }
+
+    .card-bate-volta img {
+        height: 220px;
+    }
+
+    .conteudo-bate-volta p {
+        min-height: 0;
+    }
+}
+
+/* Destaque Bate e Voltas */
+.destaque-bate-voltas {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 33, 61, 0.98) 0%,
+            rgba(20, 33, 61, 0.88) 55%,
+            rgba(20, 33, 61, 0.45) 100%
+        ),
+        url("gramado.jpg") center 45% / cover no-repeat;
+
+    padding: 75px 8%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #46536d;
+    border-bottom: 1px solid #46536d;
+    color: #e1e4e9;
+}
+
+.destaque-bate-conteudo {
+    max-width: 650px;
+}
+
+.destaque-bate-etiqueta {
+    color: #FCA311;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.destaque-bate-conteudo h1 {
+    color: #FCA311;
+    font-size: 38px;
+    margin: 0 0 12px;
+}
+
+.destaque-bate-conteudo h2 {
+    color: #e1e4e9;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.destaque-bate-descricao {
+    color: #e1e4e9;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.botao-destaque-bate {
+    display: inline-block;
+    background-color: #FCA311;
+    color: #14213D;
+    border: 1px solid #FCA311;
+    border-radius: 5px;
+    padding: 14px 22px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-destaque-bate:hover {
+    background-color: transparent;
+    color: #FCA311;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    .destaque-bate-voltas {
+        padding: 50px 6%;
+        min-height: 320px;
+        background-position: center;
+    }
+
+    .destaque-bate-conteudo h1 {
+        font-size: 30px;
+    }
+
+    .destaque-bate-conteudo h2 {
+        font-size: 20px;
+    }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #0d172b;
+    color: #e1e4e9;
+    border-top: 2px solid #FCA311;
+    text-align: center;
+    padding: 35px 20px 15px;
+}
+
+.footer-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+.footer-logo {
+    color: #e1e4e9;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-logo span {
+    color: #FCA311;
+}
+
+.footer-conteudo p {
+    color: #9ca8bc;
+    font-size: 14px;
+    margin: 15px 0 25px;
+    line-height: 1.7;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: #e1e4e9;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FCA311;
+}
+
+.footer-final {
+    border-top: 1px solid #46536d;
+    padding-top: 15px;
+}
+
+.footer-final p {
+    color: #9ca8bc;
+    font-size: 12px;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .footer-links {
+        gap: 18px;
+    }
+
+    .footer {
+        padding: 30px 15px 15px;
+    }
+}

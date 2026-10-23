@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>TRIP AMIGOS | Passeios e Viagens</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="inicio.html" class="logo">
+                    TRIP <span>AMIGOS</span>
+                </a>
+                <ul>
+                   <li><a href="index.html">INÍCIO</a></li>
+                   <li><a href="pacotes.html">PACOTES</a></li>
+                   <li><a href="viagem.html">VIAGENS</a></li>
+                   <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section class="contato-intro">
+            <span class="contato-destaque">ESTAMOS AQUI PARA VOCÊ</span>
+
+            <h2>Vamos planejar sua próxima viagem?</h2>
+
+            <p>
+                Tem dúvidas sobre nossos destinos ou quer saber mais
+                sobre nossos pacotes? Entre em contato conosco!
+                Será um prazer ajudar você a organizar sua próxima aventura.
+            </p>
+        </section>
+
+        <section class="contato-container">
+
+            <div class="contato-info">
+                <h3>Entre em contato</h3>
+
+                <p>
+                    Estamos prontos para ajudar você a encontrar
+                    o destino ideal para sua próxima viagem.
+                </p>
+
+                <div class="contato-item">
+                    <span class="contato-icone">✉</span>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>falacomigo@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contato-item">
+                    <span class="contato-icone">☎</span>
+                    <div>
+                        <h4>Telefone</h4>
+                        <p>(51)1313-1313</p>
+                    </div>
+                </div>
+
+                <div class="contato-item">
+                    <span class="contato-icone">⌖</span>
+                    <div>
+                        <h4>Atendimento</h4>
+                        <p>Atendimento online para todo o Brasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-formulario">
+                <h3>Envie sua mensagem</h3>
+
+                <form action="#" method="post">
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@exemplo.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="pacotes">Pacotes de viagem</option>
+                            <option value="destinos">Informações sobre destinos</option>
+                            <option value="duvidas">Dúvidas gerais</option>
+                            <option value="outros">Outros assuntos</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            placeholder="Como podemos ajudar você?"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar mensagem →
+                    </button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="contato-footer">
+        <p>© 2026 Trip Amigos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
